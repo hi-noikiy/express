@@ -36,7 +36,7 @@ class Import implements ShouldQueue
         $aliwuliu = app(AliClient::class);
         $order = $aliwuliu->wuliu($this->item[1]);
         dump($order);
-        if ($order->status == 0)
+        if (isset($order->status) && $order->status == 0)
         {
             $result = $order->result;
             // 投递状态 0快递收件(揽件)1.在途中 2.正在派件 3.已签收 4.派送失败 5.疑难件 6.退件签收
