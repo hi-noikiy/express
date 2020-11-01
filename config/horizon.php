@@ -165,28 +165,35 @@ return [
     */
 
     'defaults' => [
-        'supervisor-1' => [
+        'group-1' => [
             'connection' => 'redis',
             'queue' => ['default'],
             'balance' => 'auto',
             'maxProcesses' => 1,
-            'memory' => 128,
             'tries' => 1,
             'nice' => 0,
-        ],
+        ]
     ],
 
     'environments' => [
         'production' => [
-            'supervisor-1' => [
-                'maxProcesses' => 10,
+            'group-1' => [
+                'maxProcesses' => 8,
+                'balanceMaxShift' => 1,
+                'balanceCooldown' => 3,
+            ]
+        ],
+
+        'development' => [
+            'group-1' => [
+                'maxProcesses' => 8,
                 'balanceMaxShift' => 1,
                 'balanceCooldown' => 3,
             ],
         ],
 
         'local' => [
-            'supervisor-1' => [
+            'group-1' => [
                 'maxProcesses' => 3,
             ],
         ],
