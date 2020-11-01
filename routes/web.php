@@ -15,11 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/demo', [App\Http\Controllers\HomeController::class, 'demo']);
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\Order\OrderController::class, 'index']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('order');
+Route::get('/home', [App\Http\Controllers\Order\OrderController::class, 'index']);
 
 Auth::routes();
 

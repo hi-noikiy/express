@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="horizon.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="horizon.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/horizon.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2730">
-              <caret line="182" column="32" selection-start-line="182" selection-start-column="17" selection-end-line="182" selection-end-column="32" />
+            <state relative-caret-position="384">
+              <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
             </state>
           </provider>
         </entry>
@@ -85,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
@@ -149,6 +149,7 @@
         <option value="$PROJECT_DIR$/resources/views/order/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/HorizonServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
+        <option value="$PROJECT_DIR$/config/horizon.php" />
       </list>
     </option>
   </component>
@@ -345,6 +346,11 @@
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="express" type="b2602c69:ProjectViewProjectNode" />
+              <item name="express" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -395,12 +401,12 @@
       <updated>1603535474651</updated>
       <workItem from="1603535476272" duration="41505000" />
       <workItem from="1603719921708" duration="4117000" />
-      <workItem from="1604224437589" duration="2111000" />
+      <workItem from="1604224437589" duration="2357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47733000" />
+    <option name="totallyTimeSpent" value="47979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
@@ -411,8 +417,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2590909" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23908414" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2590909" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23908414" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -727,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/horizon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2730">
-          <caret line="182" column="32" selection-start-line="182" selection-start-column="17" selection-end-line="182" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -762,6 +761,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="21" column="90" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/horizon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
         </state>
       </provider>
     </entry>
