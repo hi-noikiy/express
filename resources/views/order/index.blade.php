@@ -63,10 +63,12 @@
                             <td>{{ $order->platform }}</td>
                             <td>{{ $order->status }}</td>
                             <td>
+                                @if ($order->detail)
                                 @foreach (json_decode($order->detail) as $item)
                                    {{ $item->time }} <br>
                                    {{ $item->status }} <br>
                                 @endforeach
+                                @endif
                             </td>
                         </tr>
                         @endforeach
