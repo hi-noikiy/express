@@ -20,8 +20,8 @@ class OrdersExport implements FromCollection
     }
 
     /**
-    * @return \Illuminate\Support\Collection
-    */
+     * @return Collection
+     */
     public function collection()
     {
         $orders = Order::where('type', $this->type);
