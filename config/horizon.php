@@ -168,7 +168,7 @@ return [
         'group-1' => [
             'connection' => 'redis',
             'queue' => ['default'],
-            'balance' => 'auto',
+            'balance' => 'simple',
             'maxProcesses' => 1,
             'tries' => 1,
             'nice' => 0,
