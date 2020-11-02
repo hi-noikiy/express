@@ -73,7 +73,9 @@ class Loading extends Command
         ];
         dump($params);
         $response = $service->orderSingle($params);
-        dump($response);
+        if ($page == 1)
+            dump($response);
+        dump($page * 50);
         if ($response['page_size'])
         {
             $orders = $response['orders'];
