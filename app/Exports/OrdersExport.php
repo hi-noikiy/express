@@ -27,7 +27,10 @@ class OrdersExport implements FromCollection
         $orders = Order::where('type', $this->type);
         if ($this->model == 2)
         {
-            $orders = $orders->where('status', '揽件');
+            $orders = $orders->where(function ($query) {
+                $query->where('status', '揽件')
+                    ->orWhere('status', '');
+            });
         }
         $orders = $orders->select('company', 'number', 'platform', 'status', 'detail')->get();
         $orderArr = [
