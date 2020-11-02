@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a7274c8-ad36-420e-a99b-4bd1acc783e6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Jobs/Order/Import.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/Order/Import.php" afterDir="false" />
-    </list>
+    <list default="true" id="1a7274c8-ad36-420e-a99b-4bd1acc783e6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +29,7 @@
       <file leaf-file-name="OrdersExport.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Exports/OrdersExport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
+            <state relative-caret-position="596">
               <caret line="53" column="41" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="41" />
               <folding>
                 <element signature="e#31#52#0#PHP" expanded="true" />
@@ -40,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Import.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Import.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Jobs/Order/Import.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
+            <state relative-caret-position="307">
               <caret line="44" column="57" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="57" />
               <folding>
                 <element signature="e#34#55#0#PHP" expanded="true" />
@@ -52,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Loading.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Loading.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/Loading.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="996">
-              <caret line="90" column="101" selection-start-line="90" selection-start-column="100" selection-end-line="90" selection-end-column="101" />
+            <state relative-caret-position="304">
+              <caret line="92" column="29" lean-forward="true" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
               <folding>
                 <element signature="e#40#66#0#PHP" expanded="true" />
               </folding>
@@ -438,12 +436,12 @@
       <workItem from="1603535476272" duration="41505000" />
       <workItem from="1603719921708" duration="4117000" />
       <workItem from="1604224437589" duration="3384000" />
-      <workItem from="1604319715574" duration="5115000" />
+      <workItem from="1604319715574" duration="5359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54121000" />
+    <option name="totallyTimeSpent" value="54365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
@@ -758,26 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exports/OrdersExport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="41" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="41" />
-          <folding>
-            <element signature="e#31#52#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Loading.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="996">
-          <caret line="90" column="101" selection-start-line="90" selection-start-column="100" selection-end-line="90" selection-end-column="101" />
-          <folding>
-            <element signature="e#40#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -792,6 +770,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Order/Import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="44" column="57" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="57" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exports/OrdersExport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="41" />
+          <folding>
+            <element signature="e#31#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Order/OrderController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -802,12 +800,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Order/Import.php">
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Loading.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="44" column="57" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="57" />
+        <state relative-caret-position="304">
+          <caret line="92" column="29" lean-forward="true" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
           <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
+            <element signature="e#40#66#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

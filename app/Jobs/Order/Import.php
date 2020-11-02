@@ -35,7 +35,8 @@ class Import implements ShouldQueue
     public function handle()
     {
         $aliwuliu = app(AliClient::class);
-        $order = $aliwuliu->wuliu($this->item[1]);
+//        $order = $aliwuliu->wuliu($this->item[1]);
+        $order = [];
         $orderCreateData = [
             'type' => isset($this->item[2]) ? 2 : 1,
             'company' => $this->item[0],
