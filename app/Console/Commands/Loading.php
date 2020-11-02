@@ -70,7 +70,7 @@ class Loading extends Command
             'page_size' => 50,
             'page_index' => $page
         ];
-
+        dump($params);
         $response = $service->orderSingle($params);
         dump($response);
         if ($response['page_size'])
@@ -89,7 +89,7 @@ class Loading extends Command
                             {
                                 $orderId = str_replace('@', '', $order['l_id']);
                                 $item = [$order['logistics_company'], $orderId, $order['shop_name']];
-                                Import::dispatch($item);
+//                                Import::dispatch($item);
                             }
                         }
 

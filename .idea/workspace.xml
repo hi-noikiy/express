@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a7274c8-ad36-420e-a99b-4bd1acc783e6" name="Default" comment="" />
+    <list default="true" id="1a7274c8-ad36-420e-a99b-4bd1acc783e6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/Loading.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Loading.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +55,8 @@
       <file leaf-file-name="Loading.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/Loading.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="43" column="36" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="36" />
+            <state relative-caret-position="138">
+              <caret line="67" column="68" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="68" />
               <folding>
                 <element signature="e#40#66#0#PHP" expanded="true" />
               </folding>
@@ -66,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+              <caret line="30" selection-start-line="30" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -160,12 +162,12 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_11_02_123948_add_remark_orders_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Order.php" />
-        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Loading.php" />
         <option value="$PROJECT_DIR$/app/Exports/OrdersExport.php" />
         <option value="$PROJECT_DIR$/config/horizon.php" />
         <option value="$PROJECT_DIR$/app/Jobs/Order/Import.php" />
+        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Loading.php" />
       </list>
     </option>
   </component>
@@ -436,12 +438,12 @@
       <workItem from="1603535476272" duration="41505000" />
       <workItem from="1603719921708" duration="4117000" />
       <workItem from="1604224437589" duration="3384000" />
-      <workItem from="1604319715574" duration="6114000" />
+      <workItem from="1604319715574" duration="6394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55120000" />
+    <option name="totallyTimeSpent" value="55400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
@@ -453,8 +455,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2590909" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24174654" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2590909" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24174654" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -796,14 +798,14 @@
     <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+          <caret line="30" selection-start-line="30" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/Loading.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="36" />
+        <state relative-caret-position="138">
+          <caret line="67" column="68" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="68" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
           </folding>
