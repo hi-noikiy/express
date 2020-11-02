@@ -40,9 +40,12 @@ class OrdersExport implements FromCollection
         {
             $detail = json_decode($order->detail);
             $content = '';
-            foreach ($detail as $item)
+            if ($detail)
             {
-                $content .= $item->time.' '.$item->status.' ';
+                foreach ($detail as $item)
+                {
+                    $content .= $item->time.' '.$item->status.' ';
+                }
             }
             $item = [
                 $order->company,
