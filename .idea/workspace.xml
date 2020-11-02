@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a7274c8-ad36-420e-a99b-4bd1acc783e6" name="Default" comment="" />
+    <list default="true" id="1a7274c8-ad36-420e-a99b-4bd1acc783e6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/order/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order/index.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Import.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Import.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Jobs/Order/Import.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-160">
@@ -46,6 +48,15 @@
               <folding>
                 <element signature="e#34#55#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/order/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -65,8 +76,8 @@
       <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" selection-start-line="30" selection-end-line="31" />
+            <state relative-caret-position="330">
+              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -94,15 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
               <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="36" column="21" selection-start-line="35" selection-end-line="36" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -155,7 +157,6 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Order/OrderController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/order/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/HorizonServiceProvider.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_11_02_123948_add_remark_orders_table.php" />
@@ -163,9 +164,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Exports/OrdersExport.php" />
         <option value="$PROJECT_DIR$/config/horizon.php" />
-        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Loading.php" />
         <option value="$PROJECT_DIR$/app/Jobs/Order/Import.php" />
+        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
+        <option value="$PROJECT_DIR$/resources/views/order/index.blade.php" />
       </list>
     </option>
   </component>
@@ -344,27 +346,6 @@
               <item name="express" type="b2602c69:ProjectViewProjectNode" />
               <item name="express" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Imports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -383,7 +364,20 @@
             <path>
               <item name="express" type="b2602c69:ProjectViewProjectNode" />
               <item name="express" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="express" type="b2602c69:ProjectViewProjectNode" />
+              <item name="express" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="express" type="b2602c69:ProjectViewProjectNode" />
+              <item name="express" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -436,15 +430,16 @@
       <workItem from="1603535476272" duration="41505000" />
       <workItem from="1603719921708" duration="4117000" />
       <workItem from="1604224437589" duration="3384000" />
-      <workItem from="1604319715574" duration="8200000" />
+      <workItem from="1604319715574" duration="8495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57206000" />
+    <option name="totallyTimeSpent" value="57501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -689,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/order/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -772,23 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Order/OrderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="31" column="53" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="53" />
-          <folding>
-            <element signature="e#46#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" selection-start-line="30" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/Loading.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
@@ -806,6 +777,30 @@
           <folding>
             <element signature="e#34#55#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Order/OrderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="53" />
+          <folding>
+            <element signature="e#46#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/order/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
         </state>
       </provider>
     </entry>

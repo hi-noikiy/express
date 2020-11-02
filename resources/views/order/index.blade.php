@@ -53,6 +53,7 @@
                             <th scope="col" width="5%">平台</th>
                             <th scope="col" width="8%">状态</th>
                             <th scope="col">物流信息</th>
+                            <th scope="col">备注</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -70,6 +71,7 @@
                                 @endforeach
                                 @endif
                             </td>
+                            <td>{{ $order->remark }}</td>
                         </tr>
                         @endforeach
                         </tbody>
