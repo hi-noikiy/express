@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a7274c8-ad36-420e-a99b-4bd1acc783e6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Exports/OrdersExport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exports/OrdersExport.php" afterDir="false" />
-    </list>
+    <list default="true" id="1a7274c8-ad36-420e-a99b-4bd1acc783e6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="OrdersExport.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Exports/OrdersExport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+            <state relative-caret-position="440">
+              <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
               <folding>
                 <element signature="e#31#52#0#PHP" expanded="true" />
               </folding>
@@ -430,15 +428,16 @@
       <workItem from="1603535476272" duration="41505000" />
       <workItem from="1603719921708" duration="4117000" />
       <workItem from="1604224437589" duration="3384000" />
-      <workItem from="1604319715574" duration="8744000" />
+      <workItem from="1604319715574" duration="8993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57750000" />
+    <option name="totallyTimeSpent" value="57999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -795,8 +794,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Exports/OrdersExport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        <state relative-caret-position="440">
+          <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
           <folding>
             <element signature="e#31#52#0#PHP" expanded="true" />
           </folding>

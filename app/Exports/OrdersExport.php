@@ -32,7 +32,7 @@ class OrdersExport implements FromCollection
                     ->orWhere('status', '');
             });
         }
-        $orders = $orders->select('company', 'number', 'platform', 'status', 'detail')->get();
+        $orders = $orders->select('company', 'number', 'platform', 'status', 'detail', 'remark')->get();
         $orderArr = [
             ['快递公司', '单号', '平台', '状态', '物流信息', '备注']
         ];
