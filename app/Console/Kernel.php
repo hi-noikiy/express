@@ -28,7 +28,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')->hourly();
         if (Cache::get('loading'))
         {
-            $schedule->command('wuliu:loading')->everyMinute();
+//            $schedule->command('wuliu:loading')->everyMinute();
         }
         $schedule->command('horizon:snapshot')->everyFiveMinutes();
     }
