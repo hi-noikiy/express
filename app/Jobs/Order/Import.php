@@ -10,6 +10,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 
 class Import implements ShouldQueue
 {
@@ -35,7 +36,12 @@ class Import implements ShouldQueue
     {
         $aliwuliu = app(AliClient::class);
         $order = $aliwuliu->wuliu($this->item[1]);
-        dump($order);
+        $orderCreateData = [
+            'type' => isset($this->item[2]) ? 2 : 1,
+            'company' => $this->item[0],
+            'number' => $this->item[1],
+            'platform' => $this->item[2] ?? '',
+        ];
         if (isset($order->status) && $order->status == 0)
         {
             $result = $order->result;
@@ -64,15 +70,14 @@ class Import implements ShouldQueue
                     $status = '退件签收';
                     break;
             }
-            $orderCreateData = [
-                'type' => isset($this->item[2]) ? 2 : 1,
-                'company' => $result->expName,
-                'number' => $result->number,
-                'platform' => $this->item[2] ?? '',
-                'status' => $status,
-                'detail' => json_encode($result->list)
-            ];
-            Order::create($orderCreateData);
+            $orderCreateData['status'] = $status;
+            $orderCreateData['detail'] = json_encode($result->list);
         }
+        else
+        {
+            Log::info('order:', (array) $order);
+            $orderCreateData['remark'] = '获取物流信息失败';
+        }
+        Order::create($orderCreateData);
     }
 }

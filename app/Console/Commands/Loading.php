@@ -65,8 +65,8 @@ class Loading extends Command
             '',$env['debug_mode']);
         $service = new Service($config);
         $params = [
-            'modified_begin' => date('Y-m-d H:i:s', strtotime('-1 days')),
-            'modified_end' => date('Y-m-d H:i:s', time()),
+            'modified_begin' => date('Y-m-d', strtotime('-1 days')),
+            'modified_end' => date('Y-m-d', time()),
             'page_size' => 50,
             'page_index' => $page
         ];
@@ -82,10 +82,17 @@ class Loading extends Command
                 {
                     if (!in_array($order['status'], ["WaitPay", "Cancelled"]))
                     {
-                        $orderId = str_replace('@', '', $order['l_id']);
-                        $item = [$order['logistics_company'], $orderId, $order['shop_name']];
-                        dump($item);
-                        Import::dispatch($item);
+                        if (isset($order['pay_date']))
+                        {
+                            $payDate = strtotime($order['pay_date']);
+                            if ($payDate > strtotime($params['modified_begin']) && $payDate <= strtotime(date('Y-m-d', time())))
+                            {
+                                $orderId = str_replace('@', '', $order['l_id']);
+                                $item = [$order['logistics_company'], $orderId, $order['shop_name']];
+                                Import::dispatch($item);
+                            }
+                        }
+
                     }
                 }
             }

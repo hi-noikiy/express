@@ -60,63 +60,64 @@ class HomeController extends Controller
 //        $aliclient = app(AliClient::class);
 //        $res = $aliclient->wuliu(78153135291576);
 //        dump($res);
-        $host = "https://wuliu.market.alicloudapi.com";//api访问链接
-        $path = "/kdi";//API访问后缀
-        $method = "GET";
-        $appcode = "f4d3c085f5e84b2d8b4a679d68f6b7f9";//开通服务后 买家中心-查看AppCode
-        $headers = array();
-        array_push($headers, "Authorization:APPCODE " . $appcode);
-        $querys = "no=78154826232113";  //参数写在这里
-        $bodys = "";
-        $url = $host . $path . "?" . $querys;
-
-        $curl = curl_init();
-        curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method);
-        curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-        curl_setopt($curl, CURLOPT_FAILONERROR, false);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_HEADER, true);
-        if (1 == strpos("$" . $host, "https://")) {
-            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-        }
-        $out_put = curl_exec($curl);
-
-        $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-
-        list($header, $body) = explode("\r\n\r\n", $out_put, 2);
-        if ($httpCode == 200) {
-            print("正常请求计费(其他均不计费)<br>");
-            print($body);
-        } else {
-            if ($httpCode == 400 && strpos($header, "Invalid Param Location") !== false) {
-                print("参数错误");
-            } elseif ($httpCode == 400 && strpos($header, "Invalid AppCode") !== false) {
-                print("AppCode错误");
-            } elseif ($httpCode == 400 && strpos($header, "Invalid Url") !== false) {
-                print("请求的 Method、Path 或者环境错误");
-            } elseif ($httpCode == 403 && strpos($header, "Unauthorized") !== false) {
-                print("服务未被授权（或URL和Path不正确）");
-            } elseif ($httpCode == 403 && strpos($header, "Quota Exhausted") !== false) {
-                print("套餐包次数用完");
-            } elseif ($httpCode == 500) {
-                print("API网关错误");
-            } elseif ($httpCode == 0) {
-                print("URL错误");
-            } else {
-                print("参数名错误 或 其他错误");
-                print($httpCode);
-                dd($header);
-                $headers = explode("\r\n", $header);
-                $headList = array();
-                foreach ($headers as $head) {
-                    $value = explode(':', $head);
-                    $headList[$value[0]] = $value[1];
-                }
-                print($headList['x-ca-error-message']);
-            }
-        }
-
+//        $host = "https://wuliu.market.alicloudapi.com";//api访问链接
+//        $path = "/kdi";//API访问后缀
+//        $method = "GET";
+//        $appcode = "f4d3c085f5e84b2d8b4a679d68f6b7f9";//开通服务后 买家中心-查看AppCode
+//        $headers = array();
+//        array_push($headers, "Authorization:APPCODE " . $appcode);
+//        $querys = "no=9863358947551";  //参数写在这里
+//        $bodys = "";
+//        $url = $host . $path . "?" . $querys;
+//
+//        $curl = curl_init();
+//        curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method);
+//        curl_setopt($curl, CURLOPT_URL, $url);
+//        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+//        curl_setopt($curl, CURLOPT_FAILONERROR, false);
+//        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+//        curl_setopt($curl, CURLOPT_HEADER, true);
+//        if (1 == strpos("$" . $host, "https://")) {
+//            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+//            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+//        }
+//        $out_put = curl_exec($curl);
+//
+//        $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+//
+//        list($header, $body) = explode("\r\n\r\n", $out_put, 2);
+//        if ($httpCode == 200) {
+//            print("正常请求计费(其他均不计费)<br>");
+//            print($body);
+//        } else {
+//            if ($httpCode == 400 && strpos($header, "Invalid Param Location") !== false) {
+//                print("参数错误");
+//            } elseif ($httpCode == 400 && strpos($header, "Invalid AppCode") !== false) {
+//                print("AppCode错误");
+//            } elseif ($httpCode == 400 && strpos($header, "Invalid Url") !== false) {
+//                print("请求的 Method、Path 或者环境错误");
+//            } elseif ($httpCode == 403 && strpos($header, "Unauthorized") !== false) {
+//                print("服务未被授权（或URL和Path不正确）");
+//            } elseif ($httpCode == 403 && strpos($header, "Quota Exhausted") !== false) {
+//                print("套餐包次数用完");
+//            } elseif ($httpCode == 500) {
+//                print("API网关错误");
+//            } elseif ($httpCode == 0) {
+//                print("URL错误");
+//            } else {
+//                print("参数名错误 或 其他错误");
+//                print($httpCode);
+//                dd($header);
+//                $headers = explode("\r\n", $header);
+//                $headList = array();
+//                foreach ($headers as $head) {
+//                    $value = explode(':', $head);
+//                    $headList[$value[0]] = $value[1];
+//                }
+//                print($headList['x-ca-error-message']);
+//            }
+//        }
+        $item = ["邮政快递包裹", "9863358947551", "拼多多-全护润滑油旗舰店"];
+        Import::dispatch($item);
     }
 }

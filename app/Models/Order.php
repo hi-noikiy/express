@@ -18,5 +18,6 @@ class Order extends Model
         'platform',
         'status',
         'detail',
+        'remark',
     ];
 }
