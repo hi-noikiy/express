@@ -92,7 +92,7 @@ class Loading extends Command
                             {
                                 $orderId = str_replace('@', '', $order['l_id']);
                                 $item = [$order['logistics_company'], $orderId, $order['shop_name']];
-//                                Import::dispatch($item);
+                                Import::dispatch($item);
                             }
                         }
 
