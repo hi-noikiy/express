@@ -6,6 +6,7 @@ use App\Jobs\Order\Import;
 use App\Models\Order;
 use App\Services\Logistics\Config;
 use App\Services\Logistics\Service;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
 
 class Loading extends Command
@@ -65,8 +66,8 @@ class Loading extends Command
             '',$env['debug_mode']);
         $service = new Service($config);
         $params = [
-            'modified_begin' => date('Y-m-d', strtotime('-1 days')),
-            'modified_end' => date('Y-m-d', time()),
+            'modified_begin' => Carbon::yesterday()->todatetimestring(),
+            'modified_end' => Carbon::today()->todatetimestring(),
             'page_size' => 50,
             'page_index' => $page
         ];
