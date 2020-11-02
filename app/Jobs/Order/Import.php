@@ -76,7 +76,7 @@ class Import implements ShouldQueue
         else
         {
             Log::info('order:', (array) $order);
-            $orderCreateData['remark'] = '获取物流信息失败';
+            $orderCreateData['remark'] = '没有信息';
         }
         Order::create($orderCreateData);
     }
