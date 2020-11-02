@@ -101,7 +101,8 @@ class Loading extends Command
             }
             if ($response['page_count'] > 1)
             {
-                for ($i=$page+1;$i<=$response['page_count'];$i++)
+                $i=$page+1;
+                if ($i <= $response['page_count'])
                 {
                     $this->loading($i);
                 }
