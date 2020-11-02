@@ -34,7 +34,7 @@ class OrdersExport implements FromCollection
         }
         $orders = $orders->select('company', 'number', 'platform', 'status', 'detail')->get();
         $orderArr = [
-            ['快递公司', '单号', '平台', '状态', '物流信息']
+            ['快递公司', '单号', '平台', '状态', '物流信息', '备注']
         ];
         foreach ($orders as $order)
         {
@@ -52,7 +52,8 @@ class OrdersExport implements FromCollection
                 $order->number,
                 $order->platform,
                 $order->status,
-                $content
+                $content,
+                $order->remark
             ];
             array_push($orderArr, $item);
         }
