@@ -76,10 +76,10 @@
                         @endforeach
                         </tbody>
                     </table>
-                    {{ $orders->links() }}
                 </div>
             </div>
         </div>
     </div>
 </div>
+{{ $orders->links() }}
 @endsection
