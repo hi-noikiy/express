@@ -74,6 +74,7 @@
                             <td>{{ $order->remark }}</td>
                         </tr>
                         @endforeach
+                        {{ $orders->links() }}
                         </tbody>
                     </table>
                 </div>

@@ -16,7 +16,7 @@ class AliClient {
         $appcode = config('aliwuliu.app_code');//开通服务后 买家中心-查看AppCode
         $headers = [];
         array_push($headers, "Authorization:APPCODE " . $appcode);
-        $querys = "no=$order&type=zto";  //参数写在这里
+        $querys = "no=$order";  //参数写在这里
         $bodys = "";
         $url = $host . $path . "?" . $querys;
         $curl = curl_init();

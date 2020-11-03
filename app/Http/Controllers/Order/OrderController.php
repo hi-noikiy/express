@@ -29,7 +29,7 @@ class OrderController extends Controller
     public function index($type = 0)
     {
         $type = $type ? $type : 1;
-        $orders = Order::where('type', $type)->get();
+        $orders = Order::where('type', $type)->paginate(20);
 
         return view('order.index')->with('orders', $orders)->with('type', $type);
     }
@@ -46,7 +46,7 @@ class OrderController extends Controller
 
     public function loading()
     {
-        Cache::put('loading', 1, 70);
+        Cache::put('loading', 1, 62);
 
         return redirect()->route('order', [2]);
     }

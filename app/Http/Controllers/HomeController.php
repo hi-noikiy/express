@@ -117,7 +117,7 @@ class HomeController extends Controller
 //                print($headList['x-ca-error-message']);
 //            }
 //        }
-        $item = ["邮政快递包裹", "9863358947551", "拼多多-全护润滑油旗舰店"];
+        $item = ["邮政快递包裹", "9863356919550", "拼多多-全护润滑油旗舰店"];
         Import::dispatch($item);
     }
 }
