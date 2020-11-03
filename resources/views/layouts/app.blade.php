@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>车龙快递查询系统</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

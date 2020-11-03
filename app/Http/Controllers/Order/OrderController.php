@@ -29,9 +29,10 @@ class OrderController extends Controller
     public function index($type = 0)
     {
         $type = $type ? $type : 1;
-        $orders = Order::where('type', $type)->paginate(20);
+        $orders = Order::where('type', $type)->simplePaginate(15);
+        $total = Order::where('type', $type)->count();
 
-        return view('order.index')->with('orders', $orders)->with('type', $type);
+        return view('order.index')->with('orders', $orders)->with('type', $type)->with('total', $total);
     }
 
     public function import(Request $request)

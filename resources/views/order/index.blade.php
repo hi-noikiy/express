@@ -75,11 +75,12 @@
                         </tr>
                         @endforeach
                         </tbody>
+                       总计 : {{ $total }} 条
                     </table>
+                    {{ $orders->links() }}
                 </div>
             </div>
         </div>
     </div>
 </div>
-{{ $orders->links() }}
 @endsection
