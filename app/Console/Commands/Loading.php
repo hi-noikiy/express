@@ -85,9 +85,9 @@ class Loading extends Command
                 {
                     if (!in_array($order['status'], ["WaitPay", "Cancelled"]))
                     {
-                        if (isset($order['pay_date']))
+                        if (isset($order['send_date']))
                         {
-                            $payDate = strtotime($order['pay_date']);
+                            $payDate = strtotime($order['send_date']);
                             if ($payDate > strtotime($params['modified_begin']) && $payDate <= strtotime(date('Y-m-d', time())))
                             {
                                 $orderId = str_replace('@', '', $order['l_id']);
