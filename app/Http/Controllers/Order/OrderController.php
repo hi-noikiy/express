@@ -47,7 +47,7 @@ class OrderController extends Controller
 
     public function loading()
     {
-        Cache::put('loading', 1, 62);
+        Cache::put('loading', 1, 60);
 
         return redirect()->route('order', [2]);
     }
